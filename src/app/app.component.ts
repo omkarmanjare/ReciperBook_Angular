@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ReceipeBook';
+  loadTab = 'recipe';
+
+  onTabClicked(tabName : string){
+    this.loadTab = tabName;
+  }
 }
